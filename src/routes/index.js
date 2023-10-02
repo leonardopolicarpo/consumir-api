@@ -13,10 +13,11 @@ export default function Routes() {
   return (
     <Switch>
       <MyRoute exact path="/" component={Alunos} isClosed={false} />
-      <MyRoute exact path="/aluno/:id/edit" component={Aluno} />
-      <MyRoute path="/" component={Aluno} />
-      <MyRoute path="/" component={Aluno} />
-      <MyRoute path="/" component={Aluno} />
+      <MyRoute exact path="/aluno/:id/edit" component={Aluno} isClosed />
+      <MyRoute path="/aluno/" component={Aluno} isClosed />
+      <MyRoute path="/fotos/:id" component={Fotos} isClosed />
+      <MyRoute path="/login/" component={Login} isClosed={false} />
+      <MyRoute path="/register/" component={Register} isClosed={false} />
       <MyRoute path="*" component={Page404} />
     </Switch>
   );
