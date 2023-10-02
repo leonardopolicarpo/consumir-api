@@ -25,9 +25,16 @@ export default createGlobalStyle`
     background: ${colors.primaryColor};
     border: none;
     border-radius: 4px;
+    padding: 10px 20px;
+
     color: #ffffff;
     font-weight: 700;
-    padding: 10px 20px;
+
+    transition: all 300ms;
+
+    &:hover {
+      filter: brightness(85%);
+    }
   }
 
   a {
