@@ -7,10 +7,10 @@ const initialState = {
   isLoading: false,
 };
 
-export default function (state = initialState, { type } = {}) {
-  switch (type) {
+export default function (state = initialState, action) {
+  switch (action.type) {
     case types.LOGIN_REQUEST: {
-      console.log('REDUCER', type);
+      console.log('REDUCER', action.payload);
       return state;
     }
 

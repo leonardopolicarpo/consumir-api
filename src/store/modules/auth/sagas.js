@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import * as actions from './action';
 import * as types from '../types';
 
-function* loginRequest(payload) {
+function* loginRequest({ payload }) {
   console.log('SAGA', payload);
 }
 
